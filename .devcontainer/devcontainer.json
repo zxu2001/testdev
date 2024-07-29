@@ -3,7 +3,15 @@
 {
 	"name": "Default Linux Universal",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux"
+	//"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+
+	"build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    }
+
+	//"features": {
+	//}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
